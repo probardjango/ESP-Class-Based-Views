@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_LOGIN_URL = '/admin/'
+LOGIN_URL = '/admin/' #default path for login required decorator
 
 
 # Application definition
