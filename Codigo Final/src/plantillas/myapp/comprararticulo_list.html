@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+</br>
+<h2>MIRA QUE RICO TODO!</h2>
+<ul>
+{% for object in object_list %}
+    <li><a href="{{ object.get_absolute_url }}">{{ object|upper }}</a></li>
+
+{% empty %}
+    <h3>Nada!</h3>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

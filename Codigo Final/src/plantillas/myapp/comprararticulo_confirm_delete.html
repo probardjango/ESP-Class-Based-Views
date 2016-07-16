@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+</br>
+<h2>SEGURO QUE QUIERES BORRAR ESTE ARTICULO?</h2>
+</br>
+
+<h3>!!!!!!!!!!!!!{{ object.nombre }}!!!!!!!!!!!!!!!!!</h3>
+</br>
+</br>
+
+
+<form method="POST" action="">
+	{% csrf_token %}
+<input type="submit" value="Confirmar" />
+<a href="{{ object.get_absolute_url }}" class="button">Cancelar</a>
+</form>
+{% endblock %}

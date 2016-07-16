@@ -1,0 +1,8 @@
+C reate (crear) --añadir/guardar en la base de datos
+R etrieve (recuperar) --de la base de datos ***Querying***  Detail View
+U pdate (actualizar) --pues eso Update View
+D elete (borrar/eliminar) --de la base de datos Delete View
+
+
+List (listar) --hacer una lista de todos los datos de la base de datos (un queryset) List View
+Search (buscar) --hacer una búsqueda (parecido a 'retrieve')

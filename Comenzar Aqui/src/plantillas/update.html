@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+</br>
+<h2>QUE VAS A COMPRAR HOY?</h2>
+</br>
+<form method="POST" action="">
+	{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="EDIT" />
+</form>
+{% endblock %}
